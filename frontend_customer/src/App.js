@@ -1,9 +1,4 @@
-import {
-  Routes,
-  Route,
-  useNavigationType,
-  useLocation,
-} from "react-router-dom";
+import {Routes,Route,useNavigationType,useLocation} from "react-router-dom";
 import CustomerEnd from "./pages/CustomerEnd";
 import { useEffect } from "react";
 
@@ -49,4 +44,5 @@ function App() {
     </Routes>
   );
 }
+
 export default App;
