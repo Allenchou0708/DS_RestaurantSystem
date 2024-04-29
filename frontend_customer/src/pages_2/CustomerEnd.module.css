@@ -351,6 +351,7 @@
   align-items: center;
   transform: scale(0.8); /* 调整比例，根据需要修改 */
 }
+
 .yuandonliIcon {
   position: relative;
   width: 13.22vw;
@@ -362,14 +363,13 @@
   animation: 1s ease 0s 1 normal forwards slide-in-top;
 }
 .topBar {
-  position: absolute;
   top: 0;
   left: 0;
   background-color: #23272b;
   width: 100vw;
   height: 10vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: column; 
   padding: 8px 0;
   box-sizing: border-box;
   align-items: center;
@@ -388,4 +388,13 @@
   color: var(--color-black);
   font-family: var(--font-inter);
   margin: 0 auto;
+  
+}
+
+.vertical_align_container{
+  height: 2000 px;
+}
+
+.aaa{
+  color: #bbf2ae;
 }

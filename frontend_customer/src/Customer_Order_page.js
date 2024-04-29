@@ -1,6 +1,5 @@
 import {Routes,Route,useNavigationType,useLocation} from "react-router-dom";
 import CustomerEnd from "./pages_2/CustomerEnd";
-import My_CustomerEnd from "./pages_2/My_CustomerEnd.jsx"
 import { useEffect } from "react";
 
 function App() {
@@ -41,7 +40,7 @@ function App() {
 
   return (
     <Routes>
-      <Route path="/" element={<My_CustomerEnd />} />
+      <Route path="/" element={<CustomerEnd />} />
     </Routes>
   );
 }
