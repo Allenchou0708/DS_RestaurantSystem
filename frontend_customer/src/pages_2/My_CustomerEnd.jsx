@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useState } from "react";
 import styles from "./CustomerEnd.module.css";
-import ListButton from './ListButton.jsx';
+import "./My_CustomerEnd.module.css";
 
 const CustomerEnd = () => {
   const [count1, setCount1] = useState(0);
@@ -79,63 +79,67 @@ const CustomerEnd = () => {
     };
   }, []);
 
-  // return(
-  //   <h1> Hello World</h1>
-  // )
 
-  return (
+  return (//${top_function_list}
     <main className={styles.customerEnd}>
       <div className={styles.topBar}>
-        <img
-          className={styles.yuandonliIcon}
-          src="/yuandonli@2x.png"
-          data-animate-on-scroll
-        />
+
+        <div className={`container ${styles.hide_in_bar_cent}`}>
+          <img
+            className={`${styles.yuandonliIcon}`}
+            src="/yuandonli@2x.png"
+            data-animate-on-scroll
+          />
+
+          <div className={`${styles.top_function_list}`}>
+            <span className={styles.top_function_hint}>
+              Table : 25            
+            </span>
+          </div> 
+
+
+        </div>
+        
+   
       </div>  
 
+      
+
       <div className=" container-fluid ">
-        <div className=" container align-content-center" style={v_align_container}>
+        <div className={`container align-content-center ${styles.v_align_container}`} >
           <div className="row g-5 ">
-            <div className=" col-4">
+            <div className="col-12 col-lg-4">
               <div className="item ">
-                <img src="/DonFan.jpg" style={img_height} className=" bg-danger object-fit-cover mb-2 w-100"/>
-                <button className="btn py-2 mt-3 bg-dark text-white w-100">
+                <img src="/DonFan.jpg" className={`object-fit-cover mb-lg-2 ${styles.img_width} ${styles.img_height}`}/>
+                <button className={`btn py-2 mt-lg-3 bg-dark text-white ${styles.button_width}`}>
                   <h1>我要點餐</h1>            
                 </button>
               </div>
             </div>
-            <div className=" col-4">
+            <div className="col-12 col-lg-4">
               <div className="item">
-                <img style={img_height} src="/YDL_Menu.jpg" className=" object-fit-cover mb-2 w-100"/>
-                <button className="btn py-2 mt-3 bg-dark text-white w-100">
+                <img src="/YDL_Menu.jpg" className={`object-fit-cover mb-lg-2 ${styles.img_width} ${styles.img_height}`}/>
+                <button className={`btn py-2 mt-lg-3 bg-dark text-white ${styles.button_width}`}>
                   <h1>訂單狀況</h1>            
                 </button>
               </div>
             </div>
-            <div className=" col-4">
+            {
+            <div className="col-12 col-lg-4">
               <div className="item">
-                <img style={img_height} src="/YDLS.jpg" className=" object-fit-cover mb-2 w-100"/>
-                <button className="btn py-2 mt-3 bg-dark text-white w-100">
+                <img src="/YDLS.jpg" className={`object-fit-cover mb-lg-2 ${styles.img_width} ${styles.img_height}`}/>
+                <button className={`btn py-2 mt-lg-3 bg-dark text-white ${styles.button_width}`}>
                   <h1>關於店家</h1>            
                 </button>
               </div>
-            </div>
+            </div>}
           </div>
         </div>
-      </div>
-    
+      </div>    
+      
     </main>
   );
 };
-
-const v_align_container = {
-  height: "80vh",
-}
-
-const img_height = {
-  height: "50vh",
-}
-
 
 
 export default CustomerEnd;
