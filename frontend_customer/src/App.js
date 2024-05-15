@@ -6,8 +6,8 @@ import Test_order from "./pages_2/Test_Order.js";
 import Test_previous_order from "./pages_2/Test_Previous_Order.js";
 import NoteContent from "./function/Order_Context.js";
 import SentOrderPage from "./pages_2/SentOrderPage.js";
-import Original_OrderPage from "./pages_2/OrderPage_backup_two_column.jsx"
 import OrderPage from "./pages_2/OrderPage.jsx";
+import Originally_CustomerEnd from "./pages_2/OriginalCustomerEnd.jsx";
 
 function App() {
   const action = useNavigationType();
@@ -56,7 +56,6 @@ function App() {
         </Route>
         <Route path="/previous_order" element={<Test_previous_order></Test_previous_order>}/>
         <Route path="/store_detail" element={<Test_Store_Detail></Test_Store_Detail>}/>
-        <Route path="/original_order" element={<Original_OrderPage></Original_OrderPage>}></Route>
       </Routes>
   );
 }

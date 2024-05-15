@@ -9,61 +9,7 @@ body {
 }
 
 
-.wraper{
-    background-color: var(--white_back);
-    margin-top: 5%;
-    border-radius: 5%;
-    border: black solid 2px;
-    -webkit-border-radius: 5%;
-    -moz-border-radius: 5%;
-    -ms-border-radius: 5%;
-    -o-border-radius: 5%;
-    opacity: 75%;
-    display: flex;
-}
 
-.meal_pic{
-    margin: 10px;
-    border-radius: 10%;
-    -webkit-border-radius: 10%;
-    -moz-border-radius: 10%;
-    -ms-border-radius: 10%;
-    -o-border-radius: 10%;
-}
-
-.verticle_box{
-    display: flex;
-    flex-direction: column;
-    /* justify-content: space-around; */
-    margin: 10px 0px 10px 0px;
-    margin-left: 5%;
-    color: black;
-    position: relative;
-}
-
-.meal_name{
-    font-size: 25px;
-    font-weight: bold;
-}
-
-.meal_price{
-    margin-top: 3%;
-    margin-left: 3%;
-    font-size: 20px;
-    color: rgb(45, 44, 44);
-}
-
-.meal_opperate{
-    line-height: 20px;
-    display: flex;
-    align-items: center;
-    position: absolute;
-    bottom: 3px;
-}
-
-.quantity{
-    margin: 0px 12px;
-}
 
 .topBar {
     background-color: #23272b;
@@ -115,17 +61,19 @@ body {
     height: 10vh;
 }
 
-.sent_order_button{
-    padding: 2vh 4vh;
-    margin: 3vh 0;
-    font-size: 20px;
-    width: 80%;
-}
-
 .sent_button_div{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
+
+.sentpage_order_button{
+    padding: 2vh 4vh;
+    margin: 3vh 1vh;
+    font-size: 20px;
+    width: 40%;
+}
+
+
 
 
 .debug{

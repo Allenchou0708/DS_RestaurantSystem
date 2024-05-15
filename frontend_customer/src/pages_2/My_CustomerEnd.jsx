@@ -1,6 +1,6 @@
 import { useEffect} from "react";
 import styles from "./CustomerEnd.module.css";
-import "../style/My_CustomerEnd.css";
+// import "../style/My_CustomerEnd.css";
 import {aos_anime_scroll} from "../../src/function/AOS_Anime_scroll.js"
 import { useNavigate } from "react-router-dom";
 
