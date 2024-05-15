@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useState } from "react";
 import styles from "./CustomerEnd.module.css";
-import ListButton from './ListButton.jsx';
+import ListButton from '../pages_2/ListButton.jsx';
 
 const CustomerEnd = () => {
   const [count1, setCount1] = useState(0);

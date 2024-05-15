@@ -11,7 +11,7 @@ const NoteContent = () => {
 
   useEffect(()=>{
     const meals = fetch_meal()
-    var order_quantity = Array.from({ length: meals.length }, () => 10);
+    var order_quantity = Array.from({ length: meals.length }, () => 0);
     dispatch(update_state(order_quantity))
     
   },[])

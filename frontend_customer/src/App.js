@@ -1,13 +1,12 @@
 import {Routes,Route,useNavigationType,useLocation} from "react-router-dom";
-import CustomerEnd from "./pages_2/CustomerEnd";
 import My_CustomerEnd from "./pages_2/My_CustomerEnd.jsx"
 import { useEffect,useReducer } from "react";
-import Hello from "./pages_2/Hello.js";
 import Test_Store_Detail from "./Test_Store_Detail.js";
 import Test_order from "./pages_2/Test_Order.js";
 import Test_previous_order from "./pages_2/Test_Previous_Order.js";
 import NoteContent from "./function/Order_Context.js";
 import SentOrderPage from "./pages_2/SentOrderPage.js";
+import Original_OrderPage from "./pages_2/OrderPage_backup_two_column.jsx"
 import OrderPage from "./pages_2/OrderPage.jsx";
 
 function App() {
@@ -51,13 +50,13 @@ function App() {
   return (
       <Routes>
         <Route path="/" element={<My_CustomerEnd />} exact={true}/>
-        <Route path="/hello" element={<Hello/>} />
         <Route element={<NoteContent></NoteContent>}>
           <Route path="/sent_order" element={<SentOrderPage></SentOrderPage> } exact={true}/>
           <Route path="/order" element={<OrderPage></OrderPage>} exact={true}/>
         </Route>
         <Route path="/previous_order" element={<Test_previous_order></Test_previous_order>}/>
         <Route path="/store_detail" element={<Test_Store_Detail></Test_Store_Detail>}/>
+        <Route path="/original_order" element={<Original_OrderPage></Original_OrderPage>}></Route>
       </Routes>
   );
 }

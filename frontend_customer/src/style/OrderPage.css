@@ -1,0 +1,161 @@
+:root{
+    --white_back : #ebecdd;
+    
+}
+
+body {
+    position: relative;
+    background-color: #fff3b1; 
+}
+
+
+.wraper{
+    background-color: var(--white_back);
+    margin-top: 5%;
+    border-radius: 5%;
+    border: black solid 2px;
+    -webkit-border-radius: 5%;
+    -moz-border-radius: 5%;
+    -ms-border-radius: 5%;
+    -o-border-radius: 5%;
+    opacity: 75%;
+    display: flex;
+}
+
+.meal_pic{
+    margin: 10px;
+    border-radius: 10%;
+    -webkit-border-radius: 10%;
+    -moz-border-radius: 10%;
+    -ms-border-radius: 10%;
+    -o-border-radius: 10%;
+}
+
+.verticle_box{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    margin: 10px 0px 10px 0px;
+    margin-left: 5%;
+    color: black;
+    position: relative;
+}
+
+.meal_name{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.meal_price{
+    margin-top: 3%;
+    margin-left: 3%;
+    font-size: 20px;
+    color: rgb(45, 44, 44);
+}
+
+.meal_opperate{
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 3px;
+}
+
+.quantity{
+    margin: 0px 12px;
+}
+
+.topBar {
+    background-color: #23272b;
+    height: 8vh;
+    padding: 8px 0;
+    position: relative;
+}
+.hide_in_bar_cent{
+    position: relative;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+} 
+.yuandonliIcon {
+    position: relative;
+    height: 5vh;
+    object-fit: cover;
+    opacity: 100;
+    vertical-align: middle;
+    z-index: 10;
+}
+.yuandonliIcon.animate {
+    animation: 1s ease 0s 1 normal forwards slide-in-top;
+}
+  
+
+.top_function_list{
+    position: absolute;
+    right: 3vh;
+    top : 0vh;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    height: 5vh;
+}
+  
+.top_function_hint{
+    line-height: 7.23vh;
+    font-size: 3.23vh;
+    color: white;
+    opacity: 90%;
+}
+
+.top_icon{
+    margin-left: 3vw;
+}
+  
+.footer{
+    height: 10vh;
+}
+
+.sent_order_button{
+    padding: 2vh 4vh;
+    margin: 3vh 0;
+    font-size: 20px;
+    width: 80%;
+}
+
+.sent_button_div{
+    display: flex;
+    justify-content: center;
+}
+
+.sent_order{
+    position: fixed;
+    background-color: black;
+    right: 3vh;
+    bottom: 3vh;
+    padding: 4vh;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.debug{
+    background-color: red;
+}
+.debug_2{
+    background-color: blue;
+}
+.debug_red_border{
+    border: red 2px solid;
+}
+.debug_blue_border{
+    border: blue 2px solid;
+}
+.debug_green_border{
+    border: green 2px solid;
+}
+
