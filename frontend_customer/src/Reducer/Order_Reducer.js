@@ -2,10 +2,12 @@ const Order_Reducer = (state,action) => {
     // alert(state)
     switch(action.type){
         case "add_at" :
-            var new_state = state.split(",")
-            alert(new_state[3])
+            // alert(state)
+            // alert(typeof state)
+            var new_state = Array.from(state)
+            // alert(new_state)
             new_state[action.place] =  new_state[action.place] + 1
-            return new_state.join(",")
+            return new_state
         case "sub_at" :
             return state
         case "update_state":

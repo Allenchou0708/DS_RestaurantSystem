@@ -12,7 +12,7 @@ const OrderPage = () => {
     return (
         <div>
             <p>I am {order_quantity_text} OrderPage </p>
-            <button onClick={()=>{navigate("/sent_order")}}>go to Sent Order</button>
+            <button onClick={()=>{navigate("/sent_order")}}>go to Order</button>
             
         </div>
     )

@@ -6,13 +6,13 @@ import { update_state } from "../Reducer/Operator";
 
 
 const NoteContent = () => {
-  var [order_quantity_text,dispatch] = useReducer(Order_Reducer,"")
+  var [order_quantity_text,dispatch] = useReducer(Order_Reducer,[])
  
 
   useEffect(()=>{
     const meals = fetch_meal()
-    var order_quantity = Array.from({ length: meals.length }, () => 0);
-    dispatch(update_state(order_quantity.join(",")))
+    var order_quantity = Array.from({ length: meals.length }, () => 10);
+    dispatch(update_state(order_quantity))
     
   },[])
 
