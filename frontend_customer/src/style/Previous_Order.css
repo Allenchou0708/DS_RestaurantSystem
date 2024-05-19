@@ -1,0 +1,78 @@
+.previous_order_container{
+    width: 85%;
+
+}
+
+.accordion-item{
+    background-color: var(--white_back);
+    opacity: 75%;
+   
+    border-radius: 8%;
+    -webkit-border-radius: 8%;
+    -moz-border-radius: 8%;
+    -ms-border-radius: 8%;
+    -o-border-radius: 8%;
+    /* border: black solid 2px; */
+}
+
+.accordion-collapse{
+    background-color: white
+}
+
+.order_number{
+    border: black 2px solid;
+    padding: 2vw 3vw;
+    margin-right: 4vw;
+    background-color: black;
+    opacity: 90%;
+    color: white;
+    font-size: 3vw;
+    font-weight: bold;
+    
+}
+.order_number_md{
+    padding: 1.5vw 2.3vw;
+    font-size: 2.6vw;
+    margin-left: 1vw;
+}
+.order_detail_md span{
+    font-size: 1.5vw;
+}
+.order_detail > div{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-left: 3vw;
+
+}
+.order_detail > div > span{
+    padding: 1vw 3vw;
+}
+
+.sm_each_dish{
+    display: flex;
+    justify-content: start;
+    margin: 2vw 0;
+}
+
+.sm_dish_quantity{
+    font-size: 3vw;
+    width: 20%;
+    text-align: left;
+}
+.sm_dish_name{
+    width: 50%;
+    font-size: 3.3vw;
+    text-align: left;
+}
+.sm_dish_price{
+    width: 25%;
+    font-size: 3.3vw;
+    text-align: right;
+}
+.my_collapse{
+    display: none;
+}
+.accordion-item_md{
+    width: 100%;
+}

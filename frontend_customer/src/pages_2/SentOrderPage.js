@@ -12,6 +12,18 @@ const SentOrderPage = () => {
 
     var {order_quantity_text,dispatch} = useOutletContext()
 
+    let check_total_quantity = () => {
+        let total_quantity = order_quantity_text.reduce(
+          (accumulate,element) => {
+             return accumulate+element
+          },0
+        )
+        if(total_quantity>0){
+          return true
+        }
+        return false
+      }
+
     let add = (place) => {
         dispatch(add_at(place))
     }
@@ -36,8 +48,9 @@ const SentOrderPage = () => {
             
 
             <div className="container content">
-            
-                <div className="list">
+                {
+                    check_total_quantity() == true?
+                    <div className="list">
                     <div className="dishes">
                         {dishes.map((dish, index) => {
                         if (order_quantity_text[index] > 0) {
@@ -62,13 +75,26 @@ const SentOrderPage = () => {
                         )}
                         </div>
                     </div>
-                </div>
+                    </div> :
+                    <div className="container memo_container">
+                        <div className="list sent_memo_list">
+                            <div className="sent_memo_content">
+                                請選取餐點再送出訂單
+                            </div>
+                        </div>
+                    </div>
+                }
+                
                 
                 
             </div>
             <div className="sent_button_div">
                 <button className="btn btn-dark sentpage_order_button" onClick={()=>{navigate("/order")}}>修改訂單</button>
-                <button className="btn btn-dark sentpage_order_button" onClick={()=>{navigate("/")}}>送出訂單</button>
+                {
+                    check_total_quantity() == true?
+                    <button className="btn btn-dark sentpage_order_button" onClick={()=>{navigate("/")}}>送出訂單</button>
+                    : <span/>
+                }
             </div>
             <div className="footer"/>
         </div>

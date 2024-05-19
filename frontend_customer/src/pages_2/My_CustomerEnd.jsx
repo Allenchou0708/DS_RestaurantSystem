@@ -37,29 +37,30 @@ const CustomerEnd = () => {
           <div className="row g-5 ">
             
             <div className="col-12 col-lg-4">
-              <div className="item ">
-                <img src="/DonFan.jpg" className={`object-fit-cover mb-lg-2 ${styles.img_width} ${styles.img_height}`}/>
-                <button onClick={()=>{navigate("/order")}} className={`btn py-2 mt-lg-3 bg-dark text-white ${styles.button_width}`}>
-                  <h1>我要點餐</h1>            
+              <div className="item d-flex d-lg-inline-block align-content-center justify-content-center">
+                <img src="/DonFan.jpg" className={`object-fit-cover mb-lg-2 ${styles.img_width} ${styles.img_height} d-inline-block-sm`}/>
+                <button onClick={()=>{navigate("/order")}} className={` btn py-2 mt-lg-3 bg-dark text-white ${styles.button_width} d-inline-block-sm`}>
+                  <h1 className="h3 py-md-2 ">我要點餐</h1>            
                 </button>
               </div>
             </div>
 
             <div className="col-12 col-lg-4">
-              <div className="item">
+              <div className="item d-flex d-lg-inline-block align-content-center justify-content-center">
                 <img src="/YDL_Menu.jpg" className={`object-fit-cover mb-lg-2 ${styles.img_width} ${styles.img_height}`}/>
-                <button onClick={()=>{navigate("/previous_order")}} className={`btn py-2 mt-lg-3 bg-dark text-white ${styles.button_width}`}>
-                  <h1>訂單狀況</h1>            
+                <button onClick={()=>{navigate("/previous_order")}} className={` btn py-2 mt-lg-3 bg-dark text-white ${styles.button_width}`}>
+                  <h1 className="h3 py-md-2">訂單狀況</h1>            
                 </button>
               </div>
             </div>
 
             <div className="col-12 col-lg-4">
-              <div className="item">
+              <div className="item d-flex d-lg-inline-block align-content-center justify-content-center">
                 <img src="/YDLS.jpg" className={`object-fit-cover mb-lg-2 ${styles.img_width} ${styles.img_height}`}/>
                 <button onClick={()=>{navigate("/store_detail")}} className={`btn py-2 mt-lg-3 bg-dark text-white ${styles.button_width}`}>
-                  <h1>關於店家</h1>            
+                  <h1 className="h3 py-md-2">關於店家</h1>            
                 </button>
+
               </div>
             </div>
 

@@ -15,4 +15,8 @@ let update_state = (new_state) => ({
     "new_state" : new_state
 })
 
-export {add_at,sub_at,update_state}
+let reset_state = () => ({
+    "type" : "reset_state",
+})
+
+export {add_at,sub_at,update_state,reset_state}

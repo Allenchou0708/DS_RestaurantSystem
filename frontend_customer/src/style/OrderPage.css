@@ -29,6 +29,9 @@ body {
     -moz-border-radius: 10%;
     -ms-border-radius: 10%;
     -o-border-radius: 10%;
+    width: 100px;
+    height: 100px;
+    object-fit:cover;
 }
 
 .verticle_box{
@@ -109,7 +112,12 @@ body {
 
 .top_icon{
     margin-left: 3vw;
+    
 }
+.top_icon:hover{
+    opacity: 75%;
+    cursor: pointer;
+  }
   
 .footer{
     height: 10vh;
@@ -127,6 +135,9 @@ body {
     justify-content: center;
 }
 
+.md_dishes{
+    gap: 2vw;
+}
 
 .debug{
     background-color: red;
@@ -134,13 +145,83 @@ body {
 .debug_2{
     background-color: blue;
 }
-.debug_red_border{
+.debug_border_red{
     border: red 2px solid;
 }
-.debug_blue_border{
+.debug_border_blue{
     border: blue 2px solid;
 }
-.debug_green_border{
+.debug_border_green{
     border: green 2px solid;
 }
 
+.debug_bg_grey{
+    background: grey;
+}
+
+.debug_div_grey{
+    width: 300px;
+    height: 150px;
+    background-color: grey;
+}
+
+.debug_border_purple{
+    border: purple 5px solid;
+  }
+
+.my_container{
+    width: 90%;
+    margin: auto;
+    margin-top: 3vw;
+  }
+
+.memo_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-size: 1.5vw;
+}
+
+.memo_title{
+    font-weight: bold;
+    font-size: 1.5vw;
+}
+.md_list{
+    width: 27.5vw;
+    padding: 2.5vw 1.7vw;
+}
+.md_button{
+    width: 10.9vw;
+    height: 3.8vw;
+    font-size: 1.1vw;
+}
+.list_content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.md_dish_quantity{
+    font-size: 1.2vw;
+}
+.md_dish_name{
+    width: 9vw;
+    font-size: 1.3vw;
+}
+.md_dish_price{
+    width: 8vw;
+    font-size: 1.3vw;
+    text-align: right;
+}
+/* .memo_list{
+    opacity: 80%;
+    width: 16.3vw;
+    height: 7vw;
+} */
+.md_total_name{
+    font-size: 1.8vw;
+}
+.md_total_price{
+    font-size: 1.8vw;
+    text-align: right;
+}

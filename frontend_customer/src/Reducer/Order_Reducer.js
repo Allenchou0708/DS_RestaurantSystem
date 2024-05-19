@@ -12,6 +12,9 @@ const Order_Reducer = (state,action) => {
                 return new_state
             }
             return state
+        case "reset_state":
+            var new_state = new Array(state.length).fill(0);
+            return new_state
         case "update_state":
             return action.new_state
     }

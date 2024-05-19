@@ -8,6 +8,18 @@
     opacity: 1;
   }
 }
+
+.name{
+  display: inline-block;
+  width: 14vw;
+  font-size: 1.8vw;
+  /* border: black 2px solid; */
+  text-align: right;
+  padding-right: 1.5vw;
+  
+  /* line-height: 2vw; */
+}
+
 .amount,
 .name,
 .price {
@@ -168,8 +180,7 @@
   height: 65px;
   overflow: hidden;
 }
-.line,
-.rec {
+.line{
   position: absolute;
   box-sizing: border-box;
 }
@@ -182,12 +193,15 @@
 }
 .rec {
   top: 8.79px;
-  left: 82.05px;
+  right: 0;
   border-radius: var(--br-3xs);
   background-color: var(--color-white);
   border: 3px solid var(--color-black);
-  width: 302.43px;
-  height: 171.94px;
+  width: 20vw;
+  height: 10vw;
+  
+  position: absolute;
+  box-sizing: border-box;
 }
 .vectorIcon,
 .vectorIcon1 {
@@ -212,8 +226,8 @@
   bottom: 43.75%;
   left: 27.08%;
 }
-.amount6,
-.minus,
+
+
 .vectorIcon1 {
   position: absolute;
 }
@@ -222,20 +236,20 @@
   border: 0;
   padding: 0;
   background-color: transparent;
-  top: 28px;
-  left: 61px;
-  width: 40px;
-  height: 40px;
+  width: 2.3vw;
+  height: 2.3vw;
   overflow: hidden;
+  position: relative;
+
 }
 .amount6 {
-  top: 30px;
-  left: 129px;
+
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 14px;
-  height: 36px;
+
+  font-size: 1.2vw;
+  position: relative
 }
 .vectorIcon3 {
   height: 45.83%;
@@ -258,32 +272,34 @@
   border: 0;
   padding: 0;
   background-color: transparent;
-  top: 28px;
-  left: 171px;
-  width: 40px;
-  height: 40px;
+  width: 2.3vw;
+  height: 2.3vw;
+  display: inline-block;
+  position: relative;
 }
 .button {
-  top: 98px;
-  left: 151px;
-  width: 272px;
-  height: 96px;
+  top: 7.3vw;
+  right: 0;
+  width: 13.2vw;
+  /* border: #AEC9F2 3px solid; */
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
 }
-.price6,
+
+.price6 {
+  position: absolute;
+  top: 5.4vw;
+  right: 0;
+  width: 13.2vw;
+  /* border: #AEC9F2 3px solid; */
+  text-align: center;
+  font-size: 1.2vw;
+}
 .title1 {
   position: absolute;
   display: flex;
-}
-.price6 {
-  top: 75px;
-  left: 224px;
-  align-items: center;
-  justify-content: center;
-  width: 125px;
-  height: 45px;
-}
-.title1 {
-  top: 9px;
+  top: 0.3vw;
   right: 0;
   border-radius: var(--br-3xs) var(--br-3xs) 0 0;
   background-color: var(--color-lightpink);
@@ -291,28 +307,30 @@
   border-right: 3px solid var(--color-black);
   border-bottom: 2px solid var(--color-black);
   border-left: 3px solid var(--color-black);
-  box-sizing: border-box;
-  width: 302px;
-  height: 57px;
-  flex-direction: column;
-  padding: 8.163204193115234px 9.31719970703125px;
-  align-items: flex-end;
-  justify-content: flex-start;
+  width: 20vw;
+  height: 3.5vw;
+  /* padding: 8.163204193115234px 9.31719970703125px; */
+  align-items: center;
   font-size: var(--font-size-13xl);
+  justify-content: end;
 }
 .karaagedon1Icon {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 186.04px;
-  height: 190.5px;
-  object-fit: cover;
-  clip-path: circle(50% at 50% 50%);
+  top: -0.5vw;
+  left: 1vw;
+  width: 13vw;
+  height: 12vw;
+  object-fit: contain;
+  clip-path: circle(42% at 50% 50%);
+  /* border: yellow solid 2px; */
+  /* padding: 3%; */
+  /* display: none; */
+  
 }
 .product1 {
   position: relative;
-  width: 384px;
-  height: 190px;
+  width: 90%;
+  height: 12vw;
 }
 .image {
   position: absolute;
@@ -351,62 +369,30 @@
   align-items: center;
   transform: scale(0.8); /* 调整比例，根据需要修改 */
 }
-
 .yuandonliIcon {
   position: relative;
+  width: 13.22vw;
   height: 7.23vh;
   object-fit: cover;
   opacity: 0;
-  vertical-align: middle;
 }
 .yuandonliIcon.animate {
   animation: 1s ease 0s 1 normal forwards slide-in-top;
 }
 .topBar {
+  position: absolute;
+  top: 0;
+  left: 0;
   background-color: #23272b;
+  width: 100vw;
   height: 10vh;
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   padding: 8px 0;
   box-sizing: border-box;
   align-items: center;
   justify-content: flex-start;
-  position: relative;
 }
-
-
-
-.top_function_list{
-  position: absolute;
-  right: 5vh;
-  top : 0vh;
-  z-index: 2;
-}
-
-.top_function_hint{
-  line-height: 7.23vh;
-  font-size: 3.23vh;
-  color: white;
-  opacity: 90%;
-}
-
-
-.hide_in_bar_cent{
-  position: relative;
-  height: 10vh;
-  z-index: 5;
-} 
-
-.adjust_height{
-  /* line-height: 10vh; */
-  display: block;
-}
-
-.adjust_lineheight{
-  line-height: 10vh;
-}
-
-
 .customerEnd {
   position: relative;
   background-color: #fff3b1;
@@ -420,58 +406,7 @@
   color: var(--color-black);
   font-family: var(--font-inter);
   margin: 0 auto;
-  
-}
-
-.v_align_container{
-  height: 80vh;
-}
-
-.img_height{
-  height: 50vh;
 }
 
 
-.img_width{
-  width: 100%;
-}
-
-.button_width{
-  width: 100%;
-}
-
-
-@media screen and (max-width:990px) {
-  .img_width{
-    width: 10%;
-    border: red 2px solid;
-  }
-  .img_height{
-      height: 13vh;
-      border-radius: 5px 0 0 5px
-  }
-  .button_width{
-    height: 13vh;
-    width: 70%;
-    border-radius: 0 5px 5px 0;
-    opacity: 90%;
-  }
-
-  .item{
-    display: flex;
-  }
-
-  .align_box{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-}
-
-.top_function_list{
-  position: absolute;
-  right: 5vh;
-  top : 0.6vh;
-  z-index: 2;
-}
 
