@@ -1,0 +1,227 @@
+:root{
+    --white_back : #ebecdd;
+    
+}
+
+body {
+    position: relative;
+    background-color: #fff3b1; 
+}
+
+
+.wraper{
+    background-color: var(--white_back);
+    margin-top: 5%;
+    border-radius: 5%;
+    border: black solid 2px;
+    -webkit-border-radius: 5%;
+    -moz-border-radius: 5%;
+    -ms-border-radius: 5%;
+    -o-border-radius: 5%;
+    opacity: 75%;
+    display: flex;
+}
+
+.meal_pic{
+    margin: 10px;
+    border-radius: 10%;
+    -webkit-border-radius: 10%;
+    -moz-border-radius: 10%;
+    -ms-border-radius: 10%;
+    -o-border-radius: 10%;
+    width: 100px;
+    height: 100px;
+    object-fit:cover;
+}
+
+.verticle_box{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    margin: 10px 0px 10px 0px;
+    margin-left: 5%;
+    color: black;
+    position: relative;
+}
+
+.meal_name{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.meal_price{
+    margin-top: 3%;
+    margin-left: 3%;
+    font-size: 20px;
+    color: rgb(45, 44, 44);
+}
+
+.meal_opperate{
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 3px;
+}
+
+.quantity{
+    margin: 0px 12px;
+}
+
+.topBar {
+    background-color: #23272b;
+    height: 8vh;
+    padding: 8px 0;
+    position: relative;
+}
+.hide_in_bar_cent{
+    position: relative;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+} 
+.yuandonliIcon {
+    position: relative;
+    height: 5vh;
+    object-fit: cover;
+    opacity: 100;
+    vertical-align: middle;
+    z-index: 10;
+}
+.yuandonliIcon.animate {
+    animation: 1s ease 0s 1 normal forwards slide-in-top;
+}
+  
+
+.top_function_list{
+    position: absolute;
+    right: 3vh;
+    top : 0vh;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    height: 5vh;
+}
+  
+.top_function_hint{
+    line-height: 7.23vh;
+    font-size: 3.23vh;
+    color: white;
+    opacity: 90%;
+}
+
+.top_icon{
+    margin-left: 3vw;
+    
+}
+.top_icon:hover{
+    opacity: 75%;
+    cursor: pointer;
+  }
+  
+.footer{
+    height: 10vh;
+}
+
+.sent_order_button{
+    padding: 2vh 4vh;
+    margin: 3vh 0;
+    font-size: 20px;
+    width: 80%;
+}
+
+.sent_button_div{
+    display: flex;
+    justify-content: center;
+}
+
+.md_dishes{
+    gap: 2vw;
+}
+
+.debug{
+    background-color: red;
+}
+.debug_2{
+    background-color: blue;
+}
+.debug_border_red{
+    border: red 2px solid;
+}
+.debug_border_blue{
+    border: blue 2px solid;
+}
+.debug_border_green{
+    border: green 2px solid;
+}
+
+.debug_bg_grey{
+    background: grey;
+}
+
+.debug_div_grey{
+    width: 300px;
+    height: 150px;
+    background-color: grey;
+}
+
+.debug_border_purple{
+    border: purple 5px solid;
+  }
+
+.my_container{
+    width: 90%;
+    margin: auto;
+    margin-top: 3vw;
+  }
+
+.memo_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-size: 1.5vw;
+}
+
+.memo_title{
+    font-weight: bold;
+    font-size: 1.5vw;
+}
+.md_list{
+    width: 27.5vw;
+    padding: 2.5vw 1.7vw;
+}
+.md_button{
+    width: 10.9vw;
+    height: 3.8vw;
+    font-size: 1.1vw;
+}
+.list_content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.md_dish_quantity{
+    font-size: 1.2vw;
+}
+.md_dish_name{
+    width: 9vw;
+    font-size: 1.3vw;
+}
+.md_dish_price{
+    width: 8vw;
+    font-size: 1.3vw;
+    text-align: right;
+}
+/* .memo_list{
+    opacity: 80%;
+    width: 16.3vw;
+    height: 7vw;
+} */
+.md_total_name{
+    font-size: 1.8vw;
+}
+.md_total_price{
+    font-size: 1.8vw;
+    text-align: right;
+}

@@ -1,0 +1,143 @@
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.yuandonliIcon {
+  position: relative;
+  height: 7.23vh;
+  object-fit: cover;
+  opacity: 0;
+  vertical-align: middle;
+}
+.yuandonliIcon.animate {
+  animation: 1s ease 0s 1 normal forwards slide-in-top;
+}
+.topBar {
+  background-color: #23272b;
+  height: 10vh;
+  display: flex;
+  flex-direction: column; 
+  padding: 8px 0;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+}
+
+
+
+.top_function_list{
+  position: absolute;
+  right: 5vh;
+  top : 0vh;
+  z-index: 2;
+}
+
+.top_function_hint{
+  line-height: 7.23vh;
+  font-size: 3.23vh;
+  color: white;
+  opacity: 90%;
+}
+
+
+.hide_in_bar_cent{
+  position: relative;
+  height: 10vh;
+  z-index: 5;
+} 
+
+.adjust_height{
+  /* line-height: 10vh; */
+  display: block;
+}
+
+.adjust_lineheight{
+  line-height: 10vh;
+}
+
+
+.customerEnd {
+  position: relative;
+  background-color: #fff3b1;
+  border: 2px solid var(--color-black);
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  text-align: center;
+  font-size: var(--font-size-7xl);
+  color: var(--color-black);
+  font-family: var(--font-inter);
+  margin: 0 auto;
+  
+}
+
+.v_align_container{
+  height: 80vh;
+}
+
+.img_height{
+  height: 50vh;
+}
+
+
+.img_width{
+  width: 100%;
+}
+
+.button_width{
+  width: 100%;
+}
+
+.debug_bg_orange{
+  background-color: orange;
+}
+
+.material_reset{
+  background-color:  #2196F3
+}
+
+.material_warning{
+  background-color: #dc3545;
+}
+
+.material_normal{
+  background-color: #212121;
+}
+
+
+@media screen and (max-width:990px) {
+  .img_width{
+    width: 20%;
+  }
+  .img_height{
+    height: 13vh;
+    border-radius: 5px 0 0 5px;
+}
+  .button_width{
+    height: 13vh;
+    width: 70%;
+    border-radius: 0 5px 5px 0;
+    opacity: 90%;
+}
+
+.top_function_list{
+  position: absolute;
+  right: 5vh;
+  top : 0.6vh;
+  z-index: 2;
+}
+
+
+
+
+
+}

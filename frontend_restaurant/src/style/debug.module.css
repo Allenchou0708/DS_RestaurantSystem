@@ -1,0 +1,27 @@
+.debug_bg_red{
+background-color: red;
+}
+.debug_bg_blue{
+background-color: blue;
+}
+.debug_bg_grey{
+background-color: grey;
+}
+.debug_border_red{
+border: red 2px solid;
+}
+.debug_border_blue{
+border: blue 2px solid;
+}
+.debug_border_green{
+border: green 2px solid;
+}
+
+.debug_border_purple{
+border: purple 5px solid;
+}
+.debug_div_grey{
+width: 300px;
+height: 150px;
+background-color: grey;
+}
